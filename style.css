@@ -1,0 +1,184 @@
+/* Definindo o estilo básico do corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container principal com estilo centralizado */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #3f51b5;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos */
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Estilo dos inputs de texto e número */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+/* Efeito ao focar nos inputs */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3f51b5;
+    outline: none;
+}
+
+/* Estilo dos botões */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito ao passar o mouse nos botões */
+button:hover {
+    background-color: #303f9f;
+    transform: scale(1.02);
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das células e bordas */
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    font-size: 1em;
+}
+
+/* Estilo dos cabeçalhos */
+th {
+    background-color: #3f51b5;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Cores alternadas para linhas da tabela */
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Estilo das células quando estão editáveis */
+td[contenteditable="true"] {
+    background-color: #fffbcc;
+    border: 1px solid #ffeb3b;
+}
+
+/* Efeito de hover nas células da tabela */
+table tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Estilo para a barra de busca */
+input[type="search"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+/* Efeito ao focar na barra de busca */
+input[type="search"]:focus {
+    border-color: #3f51b5;
+    outline: none;
+}
+
+/* Estilo para o botão de excluir */
+button.delete {
+    background-color: #f44336;
+}
+
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Estilo para o botão de editar */
+button.edit {
+    background-color: #ff9800;
+}
+
+button.edit:hover {
+    background-color: #f57c00;
+}
+
+/* Estilo para o botão de salvar */
+button.save {
+    background-color: #4caf50;
+}
+
+button.save:hover {
+    background-color: #388e3c;
+}
+
+/* Responsividade: Ajustes para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="search"] {
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1em;
+    }
+}

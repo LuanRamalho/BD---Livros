@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Listagem de Livros</h1>
+
+        <label for="search">Buscar:</label>
+        <input type="text" id="search" placeholder="Buscar por autor, título ou ano"><br><br>
+
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Título</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados dos livros serão preenchidos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="listagem.js"></script>
+</body>
+</html>
